@@ -1,0 +1,11 @@
+header {
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+  font-size: 85%;
+}
