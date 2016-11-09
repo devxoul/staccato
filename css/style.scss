@@ -1,0 +1,59 @@
+---
+---
+@charset "utf-8";
+
+header {
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+  font-size: 85%;
+}
+
+h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+.session {
+  .speaker-image {
+    margin-right: 1.2em;
+    margin-bottom: 1em;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 1px solid #dedede;
+  }
+
+  .summary {
+    margin-bottom: 0.2em;
+  }
+
+  .speaker {
+    border: 1px solid #eee;
+    margin-top: 0.8em;
+    padding: 0.5em;
+    font-size: 0.9em;
+    color: #666;
+    list-style: none;
+
+    .name {
+      font-weight: 600;
+      margin-bottom: 0.2em;
+    }
+
+    ul {
+      padding-left: 1.8em;
+    }
+  }
+}
+
+.session:not(:last-child) {
+  margin-bottom: 3em;
+}

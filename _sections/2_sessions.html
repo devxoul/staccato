@@ -3,40 +3,33 @@ title: "Sessions"
 ---
 
 <ul class="media-list">
-  <li class="media">
-    <div class="media-left">
-      <img class="media-object rounded-circle" src="//placehold.it/130x130" alt="Generic placeholder image">
-    </div>
-    <div class="media-body">
-      <small>14:00 ~ 14:50 / TRACK 1</small>
-      <h5>어떻게 어떻게 개발하기</h5>
-      <small>#웹 #모바일</small>
-      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-      <p>김OO / 어디어디 재직중이며, 어떤 것을 좋아하는 사람입니다.</p>
-    </div>
-  </li>
-  <li class="media">
-    <div class="media-left">
-      <img class="media-object rounded-circle" src="//placehold.it/130x130" alt="Generic placeholder image">
-    </div>
-    <div class="media-body">
-      <small>14:00 ~ 14:50 / TRACK 2</small>
-      <h5>어떻게 어떻게 디자인하기</h5>
-      <small>#웹 #모바일</small>
-      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-      <p>최OO / 어디어디 재직중이며, 어떤 것을 좋아하는 사람입니다.</p>
-    </div>
-  </li>
-  <li class="media">
-    <div class="media-left">
-      <img class="media-object rounded-circle" src="//placehold.it/130x130" alt="Generic placeholder image">
-    </div>
-    <div class="media-body">
-      <small>14:00 ~ 14:50 / TRACK 3</small>
-      <h5>어떻게 어떻게 기획하기</h5>
-      <small>#웹 #모바일</small>
-      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-      <p>박OO / 어디어디 재직중이며, 어떤 것을 좋아하는 사람입니다.</p>
-    </div>
-  </li>
+  {% for session in site.data.sessions %}
+    <li class="media session">
+      <div class="media-left">
+        {% if session.speaker.image_name and session.speaker.image_name != '' %}
+          {% assign image_url = "/images/speakers/" | append: session.speaker.image_name %}
+        {% else %}
+          {% assign image_url = "https://placehold.it/150x150" %}
+        {% endif %}
+        <div class="media-object float-sm-left rounded-circle speaker-image"
+          style="background-image: url('{{ image_url }}')" />
+      </div>
+      <div class="media-body">
+        <small class="time">{{ session.time }} / TRACK {{ session.track }}</small>
+        <h5>{{ session.title }}</h5>
+        <p class="summary">{{ session.summary }}</p>
+        <div class="speaker">
+          <p class="name">{{ session.speaker.name }}</p>
+          <ul>
+            {% if session.speaker.company and session.speaker.company != '' %}
+              <li class="company">{{ session.speaker.company }}</li>
+            {% endif %}
+            {% if session.speaker.bio and session.speaker.bio != '' %}
+              <li class="bio">{{ session.speaker.bio }}</li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
 </ul>
