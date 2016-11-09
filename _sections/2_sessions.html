@@ -7,7 +7,7 @@ title: "Sessions"
     <li class="media session">
       <div class="media-left">
         {% if session.speaker.image_name and session.speaker.image_name != '' %}
-          {% assign image_url = "/images/speakers/" | append: session.speaker.image_name %}
+          {% assign image_url = "/images/speakers/" | append: session.speaker.image_name | relative_url %}
         {% else %}
           {% assign image_url = "https://placehold.it/150x150" %}
         {% endif %}
