@@ -1,2 +1,4 @@
+baseurl: '/staccato'
+url: 'https://stac.github.io'
 collections:
   - sections
