@@ -5,7 +5,6 @@ function drawMap() {
     level: 3
   };
   var map = new daum.maps.Map(container, options);
-  map.setDraggable(false);
   map.setZoomable(false);
 
   var markerPosition  = new daum.maps.LatLng(33.450701, 126.570667); 
