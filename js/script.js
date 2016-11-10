@@ -13,6 +13,9 @@ function drawMap() {
   });
   marker.setMap(map);
 
+  var zoomControl = new daum.maps.ZoomControl();
+  map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
+
   var iwContent = $('#info-window-template').html();
   var iwPosition = new daum.maps.LatLng(33.450701, 126.570667);
   var infowindow = new daum.maps.InfoWindow({
