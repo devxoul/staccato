@@ -19,6 +19,15 @@ h2 {
   margin-bottom: 0.8em;
 }
 
+#schedule {
+  td.cell-hall {
+    min-width: 6em;
+  }
+  td.cell-session {
+    min-width: 10em;
+  }
+}
+
 .session {
   margin-top: 2em;
 

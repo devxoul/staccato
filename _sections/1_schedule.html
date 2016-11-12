@@ -2,57 +2,65 @@
 title: "Schedule"
 ---
 
-<table class="table">
-  <thead>
-    <th>시간</th>
-    <th>내용</th>
-  </thead>
-  <tr>
-    <td>14:00 ~ 18:00</td>
-    <td>각자 할 일</td>
-  </tr>
-  <tr>
-    <td rowspan="3">14:00 ~ 14:50</td>
-    <td><a href="#">트랙 1</a></td>
-  </tr>
-  <tr>
-    <td><a href="#">트랙 2</a></td>
-  </tr>
-  <tr>
-    <td><a href="#">트랙 3</a></td>
-  </tr>
-  <tr>
-    <td rowspan="3">15:00 ~ 15:50</td>
-    <td><a href="#">트랙 1</a></td>
-  </tr>
-  <tr>
-    <td><a href="#">트랙 2</a></td>
-  </tr>
-  <tr>
-    <td><a href="#">트랙 3</a></td>
-  </tr>
-  <tr>
-    <td rowspan="3">16:00 ~ 16:50</td>
-    <td><a href="#">트랙 1</a></td>
-  </tr>
-  <tr>
-    <td><a href="#">트랙 2</a></td>
-  </tr>
-  <tr>
-    <td><a href="#">트랙 3</a></td>
-  </tr>
-  <tr>
-    <td rowspan="3">17:00 ~ 17:50</td>
-    <td><a href="#">트랙 1</a></td>
-  </tr>
-  <tr>
-    <td><a href="#">트랙 2</a></td>
-  </tr>
-  <tr>
-    <td><a href="#">트랙 3</a></td>
-  </tr>
-  <tr>
-    <td>17:50 ~ 18:00</td>
-    <td>마무리</td>
-  </tr>
-</table>
+{% assign tracks = site.data.sessions | map: "track" | uniq %}
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <th>시간</th>
+      <th>HALL</th>
+      {% for track in tracks %}
+        <th>TRACK {{ track }}</th>
+      {% endfor %}
+    </thead>
+
+    <tbody>
+      {% assign times = site.data.sessions | map: "time" | uniq %}
+      {% for time in times %}
+        <tr>
+          <td>
+            {% if time == 0 %}
+              {% assign time_str = "14:00 ~ 14:50" %}
+            {% elsif time == 1 %}
+              {% assign time_str = "15:00 ~ 15:50" %}
+            {% elsif time == 2 %}
+              {% assign time_str = "16:00 ~ 16:50" %}
+            {% elsif time == 3 %}
+              {% assign time_str = "17:00 ~ 17:50" %}
+            {% else %}
+              {% assign time_str = time %}
+            {% endif %}
+            <span class="hidden-sm-down">{{ time_str }}</span>
+            <span class="hidden-md-up">{{ time_str | split: "~" | first }}</span>
+          </td>
+          {% if time == 0 %}
+            <td rowspan="{{ times | size }}" class="cell-hall">각자 할 일</td>
+          {% endif %}
+          {% for session in site.data.sessions %}
+            {% if session.time == time %}
+              <td class="cell-session">
+                {% assign session_id = "session"
+                  | append: "-track-"
+                  | append: session.track
+                  | append: "-time-"
+                  | append: session.time %}
+                <a href="#{{ session_id }}">{{ session.title }}</a>
+                <br />
+                {% if session.speaker.company != empty %}
+                  <small class="hidden-sm-down">
+                    {{ session.speaker.name }} ({{ session.speaker.company }})
+                  </small>
+                  <small class="hidden-md-up">
+                    {{ session.speaker.name }}
+                  </small>
+                {% else %}
+                  <small>{{ session.speaker.name }}</small>
+                {% endif %}
+              </td>
+            {% endif %}
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
