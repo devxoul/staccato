@@ -3,8 +3,19 @@ title: "Sessions"
 ---
 
 <ul class="media-list">
+  {% assign current_track = 0 %}
   {% for session in site.data.sessions %}
-    <li class="media session">
+    {% if session.track != current_track %}
+      <h3>Track {{ session.track }}</h3>
+      {% assign current_track = session.track %}
+    {% endif %}
+
+    {% assign session_id = "session"
+      | append: "-track-"
+      | append: session.track
+      | append: "-time-"
+      | append: session.time %}
+    <li class="media session" id="{{ session_id }}">
       <div class="media-left">
         {% if session.speaker.image_name and session.speaker.image_name != '' %}
           {% assign image_url = "/images/speakers/" | append: session.speaker.image_name | relative_url %}
@@ -14,9 +25,22 @@ title: "Sessions"
         <div class="media-object float-sm-left rounded-circle speaker-image"
           style="background-image: url('{{ image_url }}')" />
       </div>
-      <div class="media-body">
-        <small class="time">{{ session.time }} / TRACK {{ session.track }}</small>
-        <h5>{{ session.title }}</h5>
+      <div class="media-body content">
+        <small class="time">
+          {% if session.time == 0 %}
+            {% assign time_str = "14:00 ~ 14:50" %}
+          {% elsif session.time == 1 %}
+            {% assign time_str = "15:00 ~ 15:50" %}
+          {% elsif session.time == 2 %}
+            {% assign time_str = "16:00 ~ 16:50" %}
+          {% elsif session.time == 3 %}
+            {% assign time_str = "17:00 ~ 17:50" %}
+          {% else %}
+            {% assign time_str = session.time %}
+          {% endif %}
+          {{ time_str }} / TRACK {{ session.track }}
+        </small>
+        <h5>{{ session.title }}<a href="#{{ session_id }}">🔗</a></h5>
         <p class="summary">{{ session.summary }}</p>
         <div class="speaker">
           <p class="name">{{ session.speaker.name }}</p>

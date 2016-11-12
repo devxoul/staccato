@@ -20,15 +20,33 @@ h2 {
 }
 
 .session {
+  margin-top: 2em;
+
   .speaker-image {
-    margin-right: 1.2em;
     margin-bottom: 1em;
+    margin-right: 2em;
     width: 150px;
     height: 150px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     border: 1px solid #dedede;
+  }
+
+  .content {
+    h5 a {
+      display: none;
+    }
+    h5:hover {
+      a:before {
+        content: " ";
+      }
+      a {
+        display: inline;
+        text-decoration: none;
+        font-size: 70%;
+      }
+    }
   }
 
   .summary {
@@ -55,5 +73,5 @@ h2 {
 }
 
 .session:not(:last-child) {
-  margin-bottom: 3em;
+  margin-bottom: 2.5em;
 }
