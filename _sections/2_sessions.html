@@ -6,7 +6,7 @@ title: "Sessions"
   {% assign current_track = 0 %}
   {% for session in site.data.sessions %}
     {% if session.track != current_track %}
-      <h3>Track {{ session.track }}</h3>
+      <h4>Track {{ session.track }}</h4>
       {% assign current_track = session.track %}
     {% endif %}
 
@@ -28,13 +28,13 @@ title: "Sessions"
       <div class="media-body content">
         <small class="time">
           {% if session.time == 0 %}
-            {% assign time_str = "14:00 ~ 14:50" %}
+            {% assign time_str = "14:00 - 14:50" %}
           {% elsif session.time == 1 %}
-            {% assign time_str = "15:00 ~ 15:50" %}
+            {% assign time_str = "15:00 - 15:50" %}
           {% elsif session.time == 2 %}
-            {% assign time_str = "16:00 ~ 16:50" %}
+            {% assign time_str = "16:00 - 16:50" %}
           {% elsif session.time == 3 %}
-            {% assign time_str = "17:00 ~ 17:50" %}
+            {% assign time_str = "17:00 - 17:50" %}
           {% else %}
             {% assign time_str = session.time %}
           {% endif %}

@@ -19,6 +19,14 @@ h2 {
   margin-bottom: 0.8em;
 }
 
+#about {
+  ul {
+    border: 1px solid #dedede;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
 #schedule {
   td.cell-hall {
     min-width: 6em;

@@ -20,18 +20,18 @@ title: "Schedule"
         <tr>
           <td>
             {% if time == 0 %}
-              {% assign time_str = "14:00 ~ 14:50" %}
+              {% assign time_str = "14:00 - 14:50" %}
             {% elsif time == 1 %}
-              {% assign time_str = "15:00 ~ 15:50" %}
+              {% assign time_str = "15:00 - 15:50" %}
             {% elsif time == 2 %}
-              {% assign time_str = "16:00 ~ 16:50" %}
+              {% assign time_str = "16:00 - 16:50" %}
             {% elsif time == 3 %}
-              {% assign time_str = "17:00 ~ 17:50" %}
+              {% assign time_str = "17:00 - 17:50" %}
             {% else %}
               {% assign time_str = time %}
             {% endif %}
             <span class="hidden-sm-down">{{ time_str }}</span>
-            <span class="hidden-md-up">{{ time_str | split: "~" | first }}</span>
+            <span class="hidden-md-up">{{ time_str | split: "-" | first }}</span>
           </td>
           {% if time == 0 %}
             <td rowspan="{{ times | size }}" class="cell-hall">각자 할 일</td>
