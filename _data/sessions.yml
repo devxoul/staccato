@@ -27,8 +27,8 @@
 
 - track: 1
   time: 2
-  title: "준비중"
-  summary: "준비중"
+  title: "곧 공개됩니다!"
+  summary: "두근두근"
   tags:
     - Deep Learning
     - Math
@@ -40,8 +40,8 @@
 
 - track: 1
   time: 3
-  title: "준비중"
-  summary: "준비중"
+  title: "곧 공개됩니다!"
+  summary: "두근두근"
   tags:
     - Android
   speaker:
@@ -56,8 +56,8 @@
 
 - track: 2
   time: 0
-  title: "준비중"
-  summary: "준비중"
+  title: "곧 공개됩니다!"
+  summary: "두근두근"
   tags:
     - Game
   speaker:
@@ -68,8 +68,8 @@
 
 - track: 2
   time: 1
-  title: "준비중"
-  summary: "준비중"
+  title: "곧 공개됩니다!"
+  summary: "두근두근"
   tags:
     - Game
   speaker:
@@ -80,8 +80,8 @@
 
 - track: 2
   time: 2
-  title: "준비중"
-  summary: "준비중"
+  title: "곧 공개됩니다!"
+  summary: "두근두근"
   tags:
     - Game
   speaker:
@@ -92,8 +92,8 @@
 
 - track: 2
   time: 3
-  title: "준비중"
-  summary: "준비중"
+  title: "곧 공개됩니다!"
+  summary: "두근두근"
   tags:
     - iOS
     - Architecture
@@ -109,19 +109,19 @@
 
 - track: 3
   time: 0
-  title: "준비중"
-  summary: "준비중"
+  title: "곧 공개됩니다!"
+  summary: "두근두근"
   tags:
   speaker:
     image_name: ""
     name: "준비중"
     company: ""
-    bio: "준비중"
+    bio: "입니다."
 
 - track: 3
   time: 1
-  title: "준비중"
-  summary: "준비중"
+  title: "곧 공개됩니다!"
+  summary: "두근두근"
   tags:
   speaker:
     image_name: ""
@@ -131,22 +131,22 @@
 
 - track: 3
   time: 2
-  title: "준비중"
-  summary: "준비중"
+  title: "곧 공개됩니다!"
+  summary: "두근두근"
   tags:
   speaker:
     image_name: ""
     name: "준비중"
     company: ""
-    bio: "준비중"
+    bio: "입니다."
 
 - track: 3
   time: 3
-  title: "준비중"
-  summary: "준비중"
+  title: "곧 공개됩니다!"
+  summary: "두근두근"
   tags:
   speaker:
     image_name: ""
     name: "준비중"
     company: ""
-    bio: "준비중"
+    bio: "입니다."
