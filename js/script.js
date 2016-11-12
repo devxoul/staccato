@@ -1,13 +1,17 @@
 function drawMap() {
   var container = document.getElementById('map');
+
+  var latitude = 33.450701;
+  var longitude = 126.570667;
+
   var options = {
-    center: new daum.maps.LatLng(33.450701, 126.570667),
+    center: new daum.maps.LatLng(latitude, longitude),
     level: 3
   };
   var map = new daum.maps.Map(container, options);
   map.setZoomable(false);
 
-  var markerPosition  = new daum.maps.LatLng(33.450701, 126.570667); 
+  var markerPosition  = new daum.maps.LatLng(latitude, longitude); 
   var marker = new daum.maps.Marker({
       position: markerPosition
   });
@@ -17,10 +21,10 @@ function drawMap() {
   map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
 
   var iwContent = $('#info-window-template').html();
-  var iwPosition = new daum.maps.LatLng(33.450701, 126.570667);
+  var iwPosition = new daum.maps.LatLng(latitude, longitude);
   var infowindow = new daum.maps.InfoWindow({
-      position : iwPosition, 
-      content : iwContent 
+      position: iwPosition, 
+      content: iwContent 
   });
   infowindow.open(map, marker);
 }
