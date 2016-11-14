@@ -80,8 +80,8 @@
 
 - track: 2
   time: 2
-  title: "곧 공개됩니다!"
-  summary: "두근두근"
+  title: "Jenkins씨를 고용하여 열정페이로 일 시키기! (자동 빌드 시스템 구축)"
+  summary: "apk 파일 뽑아달라는 팀원의 요청에 더 이상 스트레스 NONO! 1도 몰라도 50분만에 배우는 실용적인 '자동 빌드 시스템 구축'."
   tags:
     - Game
   speaker:
