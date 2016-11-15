@@ -109,14 +109,14 @@
 
 - track: 3
   time: 0
-  title: "곧 공개됩니다!"
-  summary: "두근두근"
+  title: "최적의 클라우드 서비스 'Microsoft Azure'"
+  summary: "Microsoft Azure는 분석, 컴퓨팅, 데이터베이스, 모바일, 네트워킹, 저장소 및 웹이 통합된 클라우드 서비스의 모음입니다. Azure에서 가상컴퓨터 1분안에 만드는 방법을 설명합니다."
   tags:
   speaker:
-    image_name: ""
-    name: "준비중"
-    company: ""
-    bio: "입니다."
+    image_name: "김은지.jpg"
+    name: "김은지"
+    company: "Microsoft"
+    bio: "기술 에반젤리스트"
 
 - track: 3
   time: 1
