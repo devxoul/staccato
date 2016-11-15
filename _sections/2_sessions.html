@@ -20,7 +20,7 @@ title: "Sessions"
         {% if session.speaker.image_name and session.speaker.image_name != '' %}
           {% assign image_url = "/images/speakers/" | append: session.speaker.image_name | relative_url %}
         {% else %}
-          {% assign image_url = "https://placehold.it/150x150" %}
+          {% assign image_url = "/images/logo_image.jpg" | relative_url %}
         {% endif %}
         <div class="media-object float-sm-left rounded-circle speaker-image"
           style="background-image: url('{{ image_url }}')" />
