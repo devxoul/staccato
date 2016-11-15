@@ -68,15 +68,15 @@
 
 - track: 2
   time: 1
-  title: "곧 공개됩니다!"
-  summary: "두근두근"
+  title: "좀비고 라이브 서비스 이야기"
+  summary: "모바일 게임 '좀비 고등학교' 의 2년 8개월간 서비스 기록에 대해 이야기 해보는 시간"
   tags:
     - Game
   speaker:
     image_name: "전우성.jpg"
     name: "전우성"
     company: "어썸피스"
-    bio: "게임 개발을 좋아합니다."
+    bio: "좀비고팀 PD, 프로그래머. 소프트웨어 마에스트로 2기."
 
 - track: 2
   time: 2
