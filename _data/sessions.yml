@@ -109,8 +109,8 @@
 
 - track: 3
   time: 0
-  title: "최적의 클라우드 서비스 'Microsoft Azure'"
-  summary: "Microsoft Azure는 분석, 컴퓨팅, 데이터베이스, 모바일, 네트워킹, 저장소 및 웹이 통합된 클라우드 서비스의 모음입니다. Azure에서 가상컴퓨터 1분안에 만드는 방법을 설명합니다."
+  title: "마이크로소프트 클라우드 서비스 Azure 맛보기!"
+  summary: "클라우드 서비스가 무엇인지, 왜 사용하는지, 언제 사용할 수 있는지, 간단한 데모와 함께 쉽고 친절하게 설명해드립니다."
   tags:
   speaker:
     image_name: "김은지.jpg"
