@@ -1,5 +1,6 @@
 # encoding: utf-8
 
+import os
 import requests
 import sys
 
@@ -112,10 +113,22 @@ def edit(content):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 4:
-        print 'Usage: onoffmix.py email password image_filename'
+    if len(sys.argv) != 2:
+        print 'Usage: onoffmix.py image_filename'
         exit(1)
-    (_, email, password, image_filename) = sys.argv
+
+    try:
+        email = os.environ['EMAIL']
+    except:
+        print '⚠️  Missing environment variable: EMAIL'
+        exit(1)
+    try:
+        password = os.environ['PASSWORD']
+    except:
+        print '⚠️  Missing environment variable: PASSWORD'
+        exit(1)
+
+    image_filename = sys.argv[1]
     login(email, password)
     image_url = upload_image(image_filename)
     content = create_content(image_url)
