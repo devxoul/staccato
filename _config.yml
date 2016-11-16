@@ -5,5 +5,7 @@ logo_image: '/images/logo_image.jpg'
 baseurl: '/staccato'
 url: 'https://stac.github.io'
 onoffmix: 'http://onoffmix.com/event/83852'
+exclude:
+  - venv
 collections:
   - sections
