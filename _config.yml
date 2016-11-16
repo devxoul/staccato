@@ -8,5 +8,6 @@ onoffmix: 'http://onoffmix.com/event/83852'
 exclude:
   - scripts
   - venv
+  - vendor
 collections:
   - sections
