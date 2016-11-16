@@ -6,6 +6,7 @@ baseurl: '/staccato'
 url: 'https://stac.github.io'
 onoffmix: 'http://onoffmix.com/event/83852'
 exclude:
+  - scripts
   - venv
 collections:
   - sections
