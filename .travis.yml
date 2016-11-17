@@ -15,5 +15,6 @@ install:
 deploy:
   provider: script
   script: make deploy
+  skip_cleanup: true
   on:
     branch: master
