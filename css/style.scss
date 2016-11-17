@@ -19,6 +19,13 @@ h2 {
   margin-bottom: 0.8em;
 }
 
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+  min-width: 200px;
+}
+
 #about {
   .info {
     border: 1px solid #dedede;
