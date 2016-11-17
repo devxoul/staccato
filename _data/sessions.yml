@@ -4,8 +4,8 @@
 
 - track: 1
   time: 0
-  title: "AWS 톺아보기"
-  summary: "서비스를 개발하다보면 서버가 필요한 경우가 많습니다. 다들 그렇게 좋다고 말하는 AWS, 비싸기만 한 것 같은데 대체 왜, 뭐가 좋아서 쓰는걸까요? 주요 몇 가지 서비스와 실제 용례를 들어 설명해봅니다."
+  title: "AWS에 Flask로 만든 서비스 올려보기"
+  summary: "AWS에 EC2, RDS 인스턴스와 S3 버킷을 만들고, EC2에 Flask 웹 애플리케이션 배포하는 과정을 떠먹여드리겠습니다."
   tags:
     - AWS
   speaker:
