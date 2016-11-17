@@ -2,3 +2,5 @@
 .jekyll-metadata
 .sass-cache
 _site
+venv
+vendor
