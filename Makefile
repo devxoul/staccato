@@ -4,6 +4,6 @@ clean:
 
 deploy: clean
 	bundle exec jekyll serve --detach
-	scripts/webkit2png --width 1200 --fullsize --filename screencapture --ignore-ssl-check http://127.0.0.1:4000/staccato/
+	scripts/webkit2png --delay 5 --width 1200 --fullsize --filename screencapture --ignore-ssl-check http://127.0.0.1:4000/staccato/
 	python scripts/onoffmix.py screencapture-full.png
 	make clean
