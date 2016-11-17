@@ -81,6 +81,13 @@ def get_base_data():
     owner_phone_body = get_input_value(html, 'ownerPhone_body')
     owner_phone_tail = get_input_value(html, 'ownerPhone_tail')
     owner_email = get_input_value(html, 'ownerEmail')
+    map_x = get_input_value(html, 'mapX')
+    map_y = get_input_value(html, 'mapY')
+    locality = get_input_value(html, 'locality')
+    sublocality1 = get_input_value(html, 'sublocality1')
+    sublocality2 = get_input_value(html, 'sublocality2')
+    address = get_input_value(html, 'address')
+    location = get_input_value(html, 'location')
     data = {
         'proc': 'modifyBaseEvent',
         'eventIdx': EVENT_ID,
@@ -100,6 +107,13 @@ def get_base_data():
         'ownerPhone_body': owner_phone_body,
         'ownerPhone_tail': owner_phone_tail,
         'ownerEmail': owner_email,
+        'mapX': map_x,
+        'mapY': map_y,
+        'locality': locality,
+        'sublocality1': sublocality1,
+        'sublocality2': sublocality2,
+        'address': address,
+        'location': location,
     }
     return data
 
