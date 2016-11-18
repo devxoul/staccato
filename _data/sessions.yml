@@ -92,8 +92,8 @@
 
 - track: 2
   time: 3
-  title: "곧 공개됩니다!"
-  summary: "두근두근"
+  title: "RxSwift와 MVVM을 사용한 iOS 프로젝트 설계"
+  summary: "곧 공개됩니다!"
   tags:
     - iOS
     - Architecture
