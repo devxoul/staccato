@@ -36,6 +36,10 @@ function updateMapDraggable(map) {
 }
 
 $(document).ready(function() {
+  $('.btn-onoffmix').click(function() {
+    fbq('track', 'ViewContent');
+  });
+
   var map = drawMap();
   updateMapDraggable(map);
 
