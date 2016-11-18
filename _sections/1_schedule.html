@@ -34,7 +34,7 @@ title: "Schedule"
             <span class="hidden-md-up">{{ time_str | split: "-" | first }}</span>
           </td>
           {% if time == 0 %}
-            <td rowspan="{{ times | size }}" class="cell-hall">각자 할 일</td>
+            <td rowspan="{{ times | size }}" class="cell-hall">자유롭게 이야기하며 할 일 하기</td>
           {% endif %}
           {% for session in site.data.sessions %}
             {% if session.time == time %}
