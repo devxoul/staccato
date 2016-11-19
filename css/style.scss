@@ -119,6 +119,17 @@ h2 {
       margin-bottom: 0.6em;
     }
   }
+
+  .gallery {
+    overflow-x: scroll;
+    .gallery-inner {
+      width: 10000px;
+    }
+    .gallery-item {
+      display: inline;
+      float: left;
+    }
+  }
 }
 
 footer {
