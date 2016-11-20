@@ -40,8 +40,8 @@
 
 - track: 1
   time: 3
-  title: "곧 공개됩니다!"
-  summary: "두근두근"
+  title: "Android를 더 잘 개발하려면?"
+  summary: "MVVM, MVP 패턴을 이해하고 Android에서 어떻게 사용하는지에 대해서 알아보는 시간."
   tags:
     - Android
   speaker:
@@ -92,8 +92,8 @@
 
 - track: 2
   time: 3
-  title: "RxSwift와 MVVM을 사용한 iOS 프로젝트 설계"
-  summary: "곧 공개됩니다!"
+  title: "Rx, 그리고 MVVM로 iOS 개발하기"
+  summary: "다양한 언어에서 그 존재감을 키워가는 Rx의 iOS 버전인 RxSwift, RxCocoa와 MVVM 패턴의 조합을 통한 설계를 사용해 프로젝트를 진행한 경험과 그 시행착오에 대해 공유합니다."
   tags:
     - iOS
     - Architecture
