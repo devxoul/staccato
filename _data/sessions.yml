@@ -40,8 +40,8 @@
 
 - track: 1
   time: 3
-  title: "곧 공개됩니다!"
-  summary: "두근두근"
+  title: "Android를 더 잘 개발하려면?"
+  summary: "MVVM, MVP 패턴을 이해하고 Android에서 어떻게 사용하는지에 대해서 알아보는 시간."
   tags:
     - Android
   speaker:
