@@ -92,7 +92,7 @@
 
 - track: 2
   time: 3
-  title: "Rx, 그리고 MVVM로으로 iOS 개발하기"
+  title: "Rx, 그리고 MVVM으로 iOS 개발하기"
   summary: "다양한 언어에서 그 존재감을 키워가는 Rx의 iOS 버전인 RxSwift, RxCocoa와 MVVM 패턴의 조합을 통한 설계를 사용해 프로젝트를 진행한 경험과 그 시행착오에 대해 공유합니다."
   tags:
     - iOS
