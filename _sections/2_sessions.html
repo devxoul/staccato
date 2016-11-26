@@ -30,13 +30,13 @@ title: "Sessions"
       <div class="media-body content">
         <small class="time">
           {% if session.time == 0 %}
-            {% assign time_str = "14:00 - 14:50" %}
+            {% assign time_str = "14:20 - 15:10" %}
           {% elsif session.time == 1 %}
-            {% assign time_str = "15:00 - 15:50" %}
+            {% assign time_str = "15:20 - 16:10" %}
           {% elsif session.time == 2 %}
-            {% assign time_str = "16:00 - 16:50" %}
+            {% assign time_str = "16:20 - 17:10" %}
           {% elsif session.time == 3 %}
-            {% assign time_str = "17:00 - 17:50" %}
+            {% assign time_str = "17:20 - 18:10" %}
           {% else %}
             {% assign time_str = session.time %}
           {% endif %}
