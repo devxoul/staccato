@@ -43,7 +43,12 @@ title: "Sessions"
           {{ time_str }} / TRACK {{ session.track }}
         </small>
         <h5>{{ session.title }}<a href="#{{ session_id }}">🔗</a></h5>
-        <p class="summary">{{ session.summary }}</p>
+        <p class="summary">
+          {{ session.summary }}
+          {% if session.slide and session.slide != empty %}
+            <a href="{{ session.slide }}" target="_blank">(슬라이드 보기)</a>
+          {% endif %}
+        </p>
         <div class="speaker">
           <p class="name">{{ session.speaker.name }}</p>
           <ul>

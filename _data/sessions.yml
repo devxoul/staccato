@@ -6,6 +6,7 @@
   time: 0
   title: "AWS에 Flask로 만든 서비스 올려보기"
   summary: "AWS에 EC2, RDS 인스턴스와 S3 버킷을 만들고, EC2에 Flask 웹 애플리케이션 배포하는 과정을 떠먹여드리겠습니다."
+  slide: "http://www.slideshare.net/JuHongJeong1/oss-aws-69310654"
   speaker:
     image_name: "정주홍.png"
     name: "정주홍"
@@ -79,6 +80,7 @@
   time: 3
   title: "Rx, 그리고 MVVM으로 iOS 개발하기"
   summary: "다양한 언어에서 그 존재감을 키워가는 Rx의 iOS 버전인 RxSwift, RxCocoa와 MVVM 패턴의 조합을 통한 설계를 사용해 프로젝트를 진행한 경험과 그 시행착오에 대해 공유합니다."
+  slide: "http://www.slideshare.net/DeepSeaDK/developing-ios-with-rx-mvvm"
   speaker:
     image_name: "김우성.png"
     name: "김우성"
