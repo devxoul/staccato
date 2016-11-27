@@ -6,8 +6,6 @@
   time: 0
   title: "AWS에 Flask로 만든 서비스 올려보기"
   summary: "AWS에 EC2, RDS 인스턴스와 S3 버킷을 만들고, EC2에 Flask 웹 애플리케이션 배포하는 과정을 떠먹여드리겠습니다."
-  tags:
-    - AWS
   speaker:
     image_name: "정주홍.png"
     name: "정주홍"
@@ -18,8 +16,6 @@
   time: 1
   title: "인터페이스와 콜팝으로 OO 사고하기"
   summary: "객체지향에서 꼭 배우지만 거의 사용하지 않는 인터페이스, 한때는 유행이였지만 지금은 한 물 가버린 콜팝을 이용해서 OO 방식으로 생각해보는 시간(대다내)!"
-  tags:
-    - Architecture
   speaker:
     image_name: "이성민.jpg"
     name: "이성민"
@@ -29,9 +25,6 @@
   time: 2
   title: "딥러닝을 위한 기초 수학"
   summary: "요즘 핫하다던 딥러닝. 수학적인 기초부터 차근차근 다져봅시다."
-  tags:
-    - Deep Learning
-    - Math
   speaker:
     image_name: "설진석.jpg"
     name: "설진석"
@@ -42,8 +35,6 @@
   time: 3
   title: "Android를 더 잘 개발하려면?"
   summary: "MVVM, MVP 패턴을 이해하고 Android에서 어떻게 사용하는지에 대해서 알아보는 시간."
-  tags:
-    - Android
   speaker:
     image_name: "윤승용.jpg"
     name: "윤승용"
@@ -58,8 +49,6 @@
   time: 0
   title: "게임기획자가 월급 받고 하는 일"
   summary: "리스너분들과 함께 즉석에서 게임을 구상해보고, 그 게임을 개발하는 과정에서 게임기획자가 어떤 일들을 하게 될지 알아보자. 어렴풋이만 알던 게임기획자의 업무와 실제 결과물을 훔쳐볼 수 있는 시간."
-  tags:
-    - Game
   speaker:
     image_name: "임효운.jpg"
     name: "임효운"
@@ -70,8 +59,6 @@
   time: 1
   title: "좀비고 라이브 서비스 이야기"
   summary: "모바일 게임 '좀비 고등학교' 의 2년 8개월간 서비스 기록에 대해 이야기 해보는 시간"
-  tags:
-    - Game
   speaker:
     image_name: "전우성.jpg"
     name: "전우성"
@@ -82,8 +69,6 @@
   time: 2
   title: "Jenkins씨를 고용하여 열정페이로 일 시키기! (자동 빌드 시스템 구축)"
   summary: "apk 파일 뽑아달라는 팀원의 요청에 더 이상 스트레스 NONO! 1도 몰라도 50분만에 배우는 실용적인 '자동 빌드 시스템 구축'."
-  tags:
-    - Game
   speaker:
     image_name: "임수현.jpg"
     name: "임수현"
@@ -94,9 +79,6 @@
   time: 3
   title: "Rx, 그리고 MVVM으로 iOS 개발하기"
   summary: "다양한 언어에서 그 존재감을 키워가는 Rx의 iOS 버전인 RxSwift, RxCocoa와 MVVM 패턴의 조합을 통한 설계를 사용해 프로젝트를 진행한 경험과 그 시행착오에 대해 공유합니다."
-  tags:
-    - iOS
-    - Architecture
   speaker:
     image_name: "김우성.png"
     name: "김우성"
@@ -111,7 +93,6 @@
   time: 0
   title: "마이크로소프트 클라우드 서비스 Azure 맛보기!"
   summary: "클라우드 서비스가 무엇인지, 왜 사용하는지, 언제 사용할 수 있는지, 간단한 데모와 함께 쉽고 친절하게 설명해드립니다."
-  tags:
   speaker:
     image_name: "김은지.jpg"
     name: "김은지"
@@ -122,7 +103,6 @@
   time: 1
   title: "나만의 폰트 만들기"
   summary: "남이 만든 폰트말고 내 글씨체로 내 폰트 만드는 방법 설명해드립니다."
-  tags:
   speaker:
     image_name: "조수현.jpg"
     name: "조수현"
@@ -133,7 +113,6 @@
   time: 2
   title: "게임 프로모션 영상 제작자에게 돈을 많이 줘야 하는 이유"
   summary: "3년간 STAC 출시게임의 영상을 제작하며 느낀 점과 이에 대한 생각을 이야기해 보는 시간."
-  tags:
   speaker:
     image_name: "김주관.png"
     name: "김주관"
@@ -144,7 +123,6 @@
   time: 3
   title: "게임회사 원화가로 취업하기"
   summary: "빽없이 자기힘으로 취업해야하는 원화가 지망생분들을 위한 원화가용 포트폴리오 만드는법을 가이드해드립니다!"
-  tags:
   speaker:
     image_name: ""
     name: "임초연"
