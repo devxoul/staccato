@@ -37,6 +37,7 @@
   time: 3
   title: "Android를 더 잘 개발하려면?"
   summary: "MVVM, MVP 패턴을 이해하고 Android에서 어떻게 사용하는지에 대해서 알아보는 시간."
+  slide: "http://www.slideshare.net/seungyongyun56/staccato-1126-track3android"
   speaker:
     image_name: "윤승용.jpg"
     name: "윤승용"
